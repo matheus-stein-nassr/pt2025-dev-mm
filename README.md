@@ -110,6 +110,7 @@ Abra http://localhost:5173 no navegador.
   | `mvn clean package` | Compila e empacota o projeto |
 
 📝 Observações
+
 Certifique-se de que o backend esteja rodando antes de enviar dados pelo frontend.
 Para facilitar testes locais, você pode usar ferramentas como Postman ou Insomnia para testar os endpoints da API.
 Máscaras, validações de idade e validade do cartão são feitas no frontend com yup e react-hook-form.
