@@ -7,10 +7,12 @@ Este repositório contém a solução para a prova técnica composta por:
 ⚙️ /backend: API REST em Spring Boot responsável por receber e processar os dados enviados pelo frontend.
 
 📁 Estrutura do Repositório
-/
+
+```bash
 ├── frontend/ # Aplicação React
 ├── backend/ # API Spring Boot
 └── README.md # Este arquivo
+```
 
 🚀 Como Rodar o Projeto
 Pré-requisitos:
@@ -93,18 +95,19 @@ yarn dev
 Abra http://localhost:5173 no navegador.
 
 ✅ Comandos Rápidos
-Frontend
-| Comando | Ação |
-| --------------- | -------------------------------- |
-| `npm run dev` | Inicia o frontend em modo dev |
-| `npm run build` | Gera build de produção |
-| `npm test` | Executa os testes (se existirem) |
 
-Backend
-| Comando | Ação |
-| --------------------- | ---------------------------- |
-| `mvn spring-boot:run` | Inicia o backend em modo dev |
-| `mvn clean package` | Compila e empacota o projeto |
+- Frontend:
+  | Comando | Ação |
+  | --------------- | -------------------------------- |
+  | `npm run dev` | Inicia o frontend em modo dev |
+  | `npm run build` | Gera build de produção |
+  | `npm test` | Executa os testes (se existirem) |
+
+- Backend:
+  | Comando | Ação |
+  | --------------------- | ---------------------------- |
+  | `mvn spring-boot:run` | Inicia o backend em modo dev |
+  | `mvn clean package` | Compila e empacota o projeto |
 
 📝 Observações
 Certifique-se de que o backend esteja rodando antes de enviar dados pelo frontend.
