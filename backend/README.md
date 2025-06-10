@@ -1,20 +1,26 @@
-# Backend – pt2025-dev-mm
+# ⚙️ Backend – pt2025-dev-mm
 
 Este é o backend da aplicação de checkout de pagamento, desenvolvido com **Spring Boot 3.5.0** e seguindo boas práticas de arquitetura em camadas.
 
-## 🛠️ Tecnologias utilizadas
+---
 
-- Java 17
-- Spring Boot 3.5.0
-- Maven
-- Jakarta Bean Validation
+## 🛠️ Tecnologias Utilizadas
+
+- ☕ Java 17
+- 🌱 Spring Boot 3.5.0
+- 🐘 Maven
+- ✅ Jakarta Bean Validation
+
+---
 
 ## 📋 Pré-requisitos
 
 - [Java 17+](https://adoptium.net/pt/temurin/releases/?version=17)
 - [Maven 3.9+](https://maven.apache.org/download.cgi) (opcional, caso não use o wrapper)
 
-## 📂 Estrutura de pastas
+---
+
+## 📂 Estrutura de Pastas
 
 ```bash
 src/main/java/com/pt2025/backend/
@@ -27,29 +33,33 @@ src/main/java/com/pt2025/backend/
 ├── validator/
 ```
 
-## 🚀 Como executar
+---
 
-1. Clone o repositório:
+## 🚀 Como Executar
 
-   ```sh
+1. **Clone o repositório:**
+
+   ```bash
    git clone <URL_DO_REPOSITORIO>
    cd backend
    ```
 
-2. Execute o projeto usando o Maven Wrapper:
-   ```sh
+2. **Execute o projeto usando o Maven Wrapper:**
+   ```bash
    ./mvnw spring-boot:run
    ```
-   Ou, se você usa Maven global:
-   ```sh
+   ou, se você usa Maven global:
+   ```bash
    mvn spring-boot:run
    ```
 
-O servidor estará rodando em: 📍 http://localhost:8080
+O servidor estará rodando em: [http://localhost:8080](http://localhost:8080)
 
-## 📫 Exemplo de requisição ao endpoint de pagamento
+---
 
-```sh
+## 📫 Exemplo de Requisição ao Endpoint de Pagamento
+
+```bash
 curl -X POST http://localhost:8080/api/payments \
   -H "Content-Type: application/json" \
   -d '{
@@ -64,22 +74,20 @@ curl -X POST http://localhost:8080/api/payments \
       }'
 ```
 
-## 🧰 Comandos Maven úteis
+---
 
-- Instalar dependências e compilar:
+## 🧰 Comandos Maven Úteis
 
-```sh
-   mvn clean install
-```
+| Comando               | Ação                             |
+| --------------------- | -------------------------------- |
+| `mvn clean install`   | Instala dependências e compila   |
+| `mvn spring-boot:run` | Inicia o backend em modo dev     |
+| `mvn test`            | Executa os testes (se existirem) |
 
-- Rodar o projeto:
+---
 
-```sh
-   mvn spring-boot:run
-```
+## 📝 Observações
 
-- Executar testes (se houver):
-
-```sh
-   mvn test
-```
+- O arquivo `src/main/resources/application.properties` já está configurado para ambiente de desenvolvimento.
+- Não é necessário configurar banco de dados.
+- Para testar os endpoints, utilize ferramentas como Postman ou Insomnia, ou o exemplo de `curl` acima.

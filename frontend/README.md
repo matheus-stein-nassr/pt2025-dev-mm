@@ -1,6 +1,6 @@
-# Frontend – pt2025-dev-mm
+# 💻 Frontend – pt2025-dev-mm
 
-Formulário frontend desenvolvido em React para coleta e validação de dados pessoais e dados de cartão de crédito, com envio para backend via API.
+Formulário frontend desenvolvido em **React** para coleta e validação de dados pessoais e de cartão de crédito, com envio para o backend via API REST.
 
 ---
 
@@ -27,71 +27,74 @@ Formulário frontend desenvolvido em React para coleta e validação de dados pe
 
 ---
 
-## 📂 Estrutura de arquivos principal
+## 📂 Estrutura de Arquivos Principal
 
-- `src/App.tsx` - componente principal e formulário
-- `src/components/Input.tsx` - componente de input customizado com validação visual
-- `src/components/Button.tsx` - botão estilizado
-- `src/components/Card.tsx` - container estilizado do formulário
-- `src/utils/masks.ts` - funções para máscaras de entrada (CPF, cartão, CVV, etc)
-- `src/utils/cardBrand.ts` - lógica para detectar bandeira do cartão
-- `src/services/api.ts` - instância Axios para comunicação com backend
+- `src/App.tsx` – componente principal e formulário
+- `src/components/Input.tsx` – componente de input customizado com validação visual
+- `src/components/Button.tsx` – botão estilizado
+- `src/components/Card.tsx` – container estilizado do formulário
+- `src/utils/masks.ts` – funções para máscaras de entrada (CPF, cartão, CVV, etc)
+- `src/utils/cardBrand.ts` – lógica para detectar bandeira do cartão
+- `src/services/api.ts` – instância Axios para comunicação com backend
 
 ---
 
-## ⚙️ Instalação
+## ⚙️ Instalação e Execução
 
 1. **Clone o repositório:**
 
-```bash
-git clone https://github.com/seu-usuario/pt2025-dev-mm.git
-```
+   ```bash
+   git clone https://github.com/seu-usuario/pt2025-dev-mm.git
+   ```
 
-2. **Acesse a pasta do projeto:**
+2. **Acesse a pasta do frontend:**
 
-```bash
-cd pt2025-dev-mm/frontend
-```
+   ```bash
+   cd pt2025-dev-mm/frontend
+   ```
 
 3. **Instale as dependências:**
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
-ou
+   ou
 
-```bash
-yarn
-```
+   ```bash
+   yarn
+   ```
 
-## 🔧 Configuração
+4. **(Opcional) Configure a URL da API:**
+   Se necessário, crie um arquivo `.env` na raiz do projeto e adicione:
 
-Se necessário, crie um arquivo `.env` na raiz do projeto e adicione as variáveis de ambiente conforme o exemplo abaixo:
+   ```
+   VITE_API_URL=http://localhost:8080
+   ```
 
-```
-VITE_API_URL=http://localhost:8080
-```
+5. **Inicie o projeto em modo de desenvolvimento:**
 
-## ▶️ Como executar
+   ```bash
+   npm run dev
+   ```
 
-Para iniciar o projeto em modo de desenvolvimento:
+   ou
 
-```bash
-npm run dev
-```
+   ```bash
+   yarn dev
+   ```
 
-ou
+   Abra seu navegador e acesse [http://localhost:5173](http://localhost:5173) (ou a porta informada no terminal).
 
-```bash
-yarn dev
-```
-
-Abra seu navegador e acesse http://localhost:5173 (ou a porta informada no terminal).
+---
 
 ## 📜 Scripts Disponíveis
 
-- `dev` – Inicia o servidor de desenvolvimento com Vite
-- `build` – Compila o projeto para produção
-- `preview` – Visualiza o build de produção localmente
-- `lint` – Executa o ESLint no projeto
+| Script    | Descrição                                |
+| --------- | ---------------------------------------- |
+| `dev`     | Inicia o servidor de desenvolvimento     |
+| `build`   | Compila o projeto para produção          |
+| `preview` | Visualiza o build de produção localmente |
+| `lint`    | Executa o ESLint no projeto              |
+
+---
