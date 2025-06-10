@@ -16,12 +16,10 @@ Este repositório contém a solução para a prova técnica composta por:
 
 🚀 Como Rodar o Projeto
 Pré-requisitos:
-
-- Node.js (v18+)
+- React (com Vite)
 - Java 17+
+- Spring Boot
 - Maven
-- Banco de dados PostgreSQL (ou outro, se configurado)
-- Docker (opcional, para banco)
 
 🔧 Backend (Spring Boot)
 
